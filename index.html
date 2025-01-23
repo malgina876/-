@@ -3,106 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ветеринарная клиника "Доктор Тома"</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <title>GradGlam</title>
+    <link rel="stylesheet" href="style.css"> </head>
 <body>
     <header>
-        <div class="container">
-            <div class="logo">
-                <img src = "C:\Users\kokos\Desktop\Web\КР\Frame 738001144.png">
-            </div>
-            <div class="contact-info">
-                <p>Работаем круглосуточно <br>Подольск, ул. Чайковского, 48А</p>
-                <p>+7 (956) 6796 43 66</p>
-            </div>
-            <div class = "logo3">
-                <img src = "C:\Users\kokos\Desktop\Web\КР\Vector.png">
-            </div>
-        </div>
+        <nav>
+            <a href="#">Контакты</a>
+            <a href="#">О нас</a>
+            <a href="#">Каталог</a>
+            <a href="#">Корзина</a>
+        </nav>
+        <h1>GradGlam</h1>
     </header>
 
     <main>
-        <h1>
-        <section class="hero">
-            <div class="container">
-                <h2>Запишитесь на прием прямо сейчас!</h2>
-                <p>Не откладывайте профилактику и лечение заболеваний питомца, оставьте заявку и наш менеджер свяжется с вами.</p>
-                <form>
-                    <input type="text" placeholder="Ваше имя" required>
-                    <input type="tel" placeholder="Телефон" required>
-                    <button type="submit">Отправить</button>
-                    <p>*Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности.</p>
-                </form>
+        <section id="about">
+            <h2>О нас</h2>
+            <p>Наш магазин предлагает широкий выбор вечерних и выпускных платьев для любого стиля и случая. Мы работаем с ведущими дизайнерами и производителями, чтобы предложить вам высококачественную продукцию по доступным ценам. Мы всегда следим за последними тенденциями в мире моды, чтобы вы могли найти идеальное платье для любого мероприятия.</p>
+            <img src="" alt="Фотографии команды">
+        </section>
+
+        <section id="new-collection">
+            <h2>New collection</h2>
+            <div class="image-grid">
+                <img src="" alt="Платье 1">
+                <img src="" alt="Платье 2">
+                <img src="" alt="Платье 3">
             </div>
         </section>
 
-        <section class="specialists">
-            <div class="container">
-                <h2>Специалисты</h2>
-                <p>Каждый из наших врачей имеет опыт работы не менее 7 лет</p>
-                <div class="specialists-list">
-                    <div class="specialist">
-                        <h3>Ласточкина Татьяна Евгеньевна</h3>
-                        <p>Терапевт, хирург, стоматолог</p>
-                    </div>
-                    <div class="specialist">
-                        <h3>Журавлев Игорь Николаевич</h3>
-                        <p>Терапевт, хирург, стоматолог</p>
-                    </div>
-                    <div class="specialist">
-                        <h3>Рябова Ирина Владимировна</h3>
-                        <p>Терапевт, хирург, стоматолог</p>
-                    </div>
-                </div>
+        <section id="popular-models">
+            <h2>Популярные модели</h2>
+            <div class="image-grid">
+                <img src="" alt="Платье 4">
+                <img src="" alt="Платье 5">
+                <img src="" alt="Платье 6">
+            </div>
+            <div class="descriptions">
+                <p>Элегантные классические платья: воплощение изысканности и безупречного вкуса.</p>
+                <p>Романтичные платья с кружевом, рюшами и другими романтическими деталями.</p>
             </div>
         </section>
 
-        <section class="services">
-            <div class="container">
-                <h2>Услуги</h2>
-                <p>Мы предоставляем срочную качественную медицинскую помощь вашим питомцам</p>
-                <ul>
-                    <li>Инструментальная диагностика</li>
-                    <li>Лабораторные исследования</li>
-                    <li>Хирургия</li>
-                    <li>Терапия и профилактика</li>
-                </ul>
-                <button>Все услуги</button>
+        <section id="reviews">
+            <h2>Отзывы наших клиентов</h2>
+            <div class="review">
+                <img src="" alt="Фото клиента">
+                <p>Мария<br> Мой выпускной был самым незабываемым днем в моей жизни и огромную роль в этом сыграл GradGlam! Платье, которое я там выбрала, было просто сказочным! Я чувствовала себя невероятно красивой, уверенной и счастливой. Спасибо вам за помощь в создании этого волшебного образа!</p>
             </div>
         </section>
 
-        <section class="call-doctor">
-            <div class="container">
-                <h2>Вызов врача на дом</h2>
-                <p>Вашему питомцу требуется неотложная помощь? Приедем в течение 40 минут!</p>
-                <form>
-                    <input type="text" placeholder="Ваше имя" required>
-                    <input type="tel" placeholder="Телефон" required>
-                    <button type="submit">Отправить</button>
-                    <p>*Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности.</p>
-                </form>
-            </div>
-        </section>
-        <section>
-
+        <section id="contact">
+            <h2>Остались вопросы? Оставьте заявку и мы скоро с тобой свяжемся!</h2>
+            <form>
+                <input type="text" placeholder="Ваше Имя">
+                <input type="email" placeholder="Ваша Почта">
+                <input type="tel" placeholder="Ваш Телефон">
+                <button type="submit">Отправить</button>
+            </form>
+            <h3>Контактная информация</h3>
+            <p>+7-995-014-75-16   mari.malina.05@bk.ru  ИП 000 GradGlam</p>
         </section>
     </main>
 
     <footer>
-        <div class="image-container">
-            <img src="c:\Users\kokos\Desktop\Web\КР\Rectangle 98.png"  class="background">
-            <img src="C:\Users\kokos\Desktop\Web\КР\Subtract.png" class="overlay">
-            <img src ="C:\Users\kokos\Desktop\Web\КР\white.png" class = "white">
-            <img src ="C:\Users\kokos\Desktop\Web\КР\logo.png" class ="dog">
-          </div>
-        <div class="contacts">
-             <p>Договор оферты</p>
-             <p>Политика конфеденциальности</p>
-             <p>Доктор Тома</p>
-         </div>  
+        <p>&copy; 2023 GradGlam</p>
     </footer>
 </body>
 </html>
-
-
