@@ -127,3 +127,48 @@ body {
   .dress-line img:hover { /* Исправленный селектор */
     transform: scale(1.1); /* Увеличение на 10% */
   }
+
+
+
+
+
+  .dress-container {
+    display: flex;
+    color: white;
+    padding: 20px;
+    font-family: sans-serif;
+  }
+
+  .dress-image {
+    flex: 1;
+    padding-right: 20px;
+      max-width: 50%; /* Задаем максимальную ширину контейнера изображения */
+  }
+
+
+  .dress-image img {
+    max-width: 100%;       /* Изображение не выходит за контейнер */
+    height: auto;         /* Сохраняет пропорции */
+      max-height: 700px;   /* Задаем максимальную высоту */
+      display: block;
+
+    object-fit: cover; 
+    margin-top: 20%; 
+    margin-left: 10%; /* Изображение масштабируется, чтобы заполнить контейнер, обрезая излишки */
+  }
+
+  .dress-text {
+    flex: 1;
+    font-size: 30px;
+    line-height: 1.5;
+    max-width: 700px; /* Максимальная ширина для текста */
+    overflow-wrap: break-word; /* Перенос длинных слов на новую строку */
+    margin-top: 15%;
+    margin-left: -5%;
+
+  }
+
+  .dress-text h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+  }
