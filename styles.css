@@ -172,3 +172,59 @@ body {
       font-size: 1.5em;
       margin-bottom: 10px;
   }
+
+
+
+
+
+
+
+
+
+
+
+  .popular-models {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.popular-models h2 {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.models-container {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    gap: 80px;
+    flex-wrap: wrap; /* Перенос на новую строку, если не вмещается */
+    max-width: 1200px; /* Ограничение максимальной ширины */
+    margin: 0 auto;  /* Центрирование контейнера по горизонтали */
+}
+
+.model-card {
+    flex: 1;
+    max-width: 300px;
+    text-align: center; /* Центрирование текста */
+    padding: 10px;
+}
+
+.model-card img {
+    max-width: 102%;
+    height: auto;
+    display: block; /* Убирает отступы снизу */
+    transition: transform 0.3s ease;
+   
+}
+
+.model-card img:hover { /* Исправленный селектор */
+    transform: scale(1.1); /* Увеличение на 10% */
+  }
+
+
+.model-card p {
+  font-size: 25px;  /* Размер шрифта */
+  margin-top: 25px;
+}
