@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #1a237e; /* Темно-синий фон */
+    color: white;
+  }
+  
+  header {
+    background-color: #05041D;; /* Темно-фиолетовый */
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 5px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+
+  
+  .hero-image {
+    position: relative; /* Важно! Делаем контейнер относительным */
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero-image img {
+    width: 100%;
+
+    object-fit: cover;
+  }
+  
+  .overlay-image {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6; /* Регулируем прозрачность */
+    z-index: 1; /* Важно! Чтобы наложение было сверху */
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 300px;
+    font-family: serif;
+    color: white;
+    z-index: 2; /* Важно! Текст должен быть сверху наложения */
+  }
+
+
+
+
+
