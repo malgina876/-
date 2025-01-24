@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #14083D; /* Темно-синий фон */
+    color: white;
+  }
+main {
+    padding: 20px;
+    flex: 1; /* Занимает оставшееся пространство */
+    display: flex; /* Выравнивает по центру */
+    justify-content: center; /* Центрируем форму по горизонтали */
+    align-items: center;  /* Центрируем форму по вертикали */
+}
+
+header {
+    background-color: #14083D;
+    padding: 10px 0;
+    text-align: center;
+     width: 100%; /* Шапка на всю ширину */
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+     align-items: center; /* Выравниваем по центру вертикально*/
+    max-width: 1200px; /* Ограничиваем ширину навигации */
+    margin: 0 auto;  /* Центрируем навигацию */
+
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 5px;
+    font-weight: bold;
+     font-size: 1.2em; /* Уменьшил немного размер шрифта для навигации*/
+}
+header nav ul {
+     list-style: none;
+     display: flex;
+      padding: 0;
+     margin: 0;
+
+}
+
+header nav ul li {
+      margin: 0 10px;
+}
+
+.logo {
+    margin-left: -50%;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    padding: 20px;
+    margin-top: 10%;
+}
+
+.login-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00005f;
+    color: white;
+    font-size: 1em;
+
+}
+
+.login-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00005f;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+  
+footer {
+    color: white;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    text-align: center;
+     border-top: 1px solid #4d4d72;
+     margin-top: 18%;
+
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+    font-size: 0.9em;
+}
+
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .login-container {
+        max-width: 90%;
+    }
+    header nav {
+      flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav ul{
+         flex-direction: column;
+         padding-top: 10px;
+    }
+    header nav ul li{
+        margin: 5px 0;
+    }
+   .contact-info{
+      flex-direction: column;
+        align-items: center;
+         text-align: center;
+        gap: 5px;
+
+    }
+}

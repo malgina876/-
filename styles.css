@@ -344,3 +344,141 @@ body {
     align-items: center;
       font-size: 0.9em;
   }
+
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    header nav {
+      flex-wrap: wrap; /* Меню переносится на следующую строку при нехватке места */
+      gap: 10px;
+    }
+  
+    header nav a {
+      font-size: 22px; /* Уменьшаем размер текста */
+      padding: 5px 10px;
+    }
+  
+    .hero-text {
+      font-size: 150px; /* Сокращаем текст в заголовке */
+      padding: 0 20px;
+    }
+  
+    #about-us {
+      grid-template-columns: 1fr; /* Одна колонка для планшетов */
+      text-align: center;
+    }
+  
+    #about-us img {
+      max-width: 80%; /* Уменьшаем изображение */
+      margin: 0 auto;
+    }
+  
+    .dress-line {
+      flex-wrap: wrap; /* Изображения переносятся на новую строку */
+      gap: 30px; /* Уменьшаем расстояние между элементами */
+    }
+  
+    .dress-line img {
+      max-width: 45%; /* Два изображения в ряд */
+      height: auto;
+    }
+  
+    .review-container {
+      flex-direction: column; /* Отзывы в одну колонку */
+      gap: 30px;
+    }
+  
+    .review-image img {
+      max-width: 90%; /* Ограничиваем ширину изображения */
+      margin: 0 auto;
+    }
+  
+    .form-container {
+      flex-wrap: wrap; /* Поля формы переносятся на новую строку */
+      justify-content: center;
+    }
+  
+    footer {
+      font-size: 14px; /* Уменьшаем текст футера */
+    }
+  }
+
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px; /* Оптимальный базовый размер шрифта */
+      padding: 0 10px;
+    }
+  
+    header nav {
+      flex-direction: column; /* Меню в столбик */
+      gap: 5px;
+    }
+  
+    header nav a {
+      font-size: 18px; /* Уменьшаем текст меню */
+      padding: 5px;
+    }
+  
+    .hero-text {
+      font-size: 80px; /* Уменьшаем текст в заголовке */
+      line-height: 1.2; /* Делаем текст более компактным */
+      padding: 10px;
+    }
+  
+    #about-us {
+      grid-template-columns: 1fr; /* Текст и картинка в одной колонке */
+      gap: 10px;
+    }
+  
+    #about-us img {
+      max-width: 100%; /* Изображение занимает всю ширину */
+      margin: 0 auto;
+    }
+  
+    .dress-line {
+      flex-direction: column; /* Изображения в столбик */
+      gap: 20px;
+    }
+  
+    .dress-line img {
+      max-width: 100%; /* Изображения занимают всю ширину */
+      height: auto;
+    }
+  
+    .dress-container {
+      flex-direction: column; /* Текст и изображение в столбик */
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .dress-image img {
+      max-width: 100%; /* Ограничиваем ширину изображения */
+      margin: 0 auto;
+    }
+  
+    .review-container {
+      flex-direction: column; /* Отзывы в одну колонку */
+      gap: 20px;
+    }
+  
+    .review-image img {
+      max-width: 100%; /* Уменьшаем изображение */
+      margin: 0 auto;
+    }
+  
+    .form-container {
+      flex-direction: column; /* Поля формы в столбик */
+      gap: 10px;
+    }
+  
+    .form-container input,
+    .form-container button {
+      width: 100%; /* Поля формы занимают всю ширину */
+    }
+  
+    footer {
+      font-size: 12px; /* Уменьшаем текст футера */
+      line-height: 1.5;
+    }
+  }
+  

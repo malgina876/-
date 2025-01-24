@@ -192,3 +192,115 @@ main {
     align-items: center;
       font-size: 0.9em;
   }
+
+
+  /* Адаптивность для планшетов (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav {
+        flex-wrap: wrap; /* Перенос элементов меню */
+        gap: 10px;
+    }
+
+    .nav-links {
+        justify-content: center; /* Центрируем ссылки */
+        flex-wrap: wrap;
+    }
+
+    .product-container {
+        flex-wrap: wrap; /* Элементы переносятся */
+        gap: 30px; /* Увеличиваем расстояние */
+    }
+
+    .product-images {
+        flex: 1 0 120px; /* Изображения уменьшаются */
+    }
+
+    .product-main-image {
+        flex: 1;
+        max-width: 300px; /* Уменьшаем главную картинку */
+    }
+
+    .product-details {
+        max-width: 300px; /* Ограничиваем ширину деталей */
+        font-size: 0.9em; /* Уменьшаем шрифт */
+    }
+
+    .contact-section {
+        padding: 15px;
+        font-size: 0.9em; /* Уменьшаем текст */
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="tel"],
+    .form-container button {
+        font-size: 0.9em; /* Уменьшаем шрифт полей */
+    }
+
+    footer {
+        font-size: 0.8em; /* Уменьшаем шрифт футера */
+    }
+}
+
+/* Адаптивность для мобильных устройств (до 768px) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Меню в столбик */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Ссылки в столбик */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .product-container {
+        flex-direction: column; /* Элементы в столбик */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .product-images {
+        flex: 0 0 auto; /* Автоматическая ширина */
+        justify-content: center; /* Центрируем маленькие изображения */
+    }
+
+    .product-main-image {
+        max-width: 90%; /* Главная картинка адаптируется к экрану */
+        height: auto;
+    }
+
+    .product-details {
+        max-width: 90%; /* Уменьшаем ширину текста */
+        text-align: center;
+    }
+
+    .contact-section {
+        font-size: 0.8em; /* Уменьшаем текст */
+        padding: 10px;
+    }
+
+    .form-container {
+        flex-direction: column; /* Поля формы в столбик */
+        gap: 10px;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="tel"],
+    .form-container button {
+        width: 100%; /* Поля занимают всю ширину */
+    }
+
+    footer {
+        font-size: 0.7em; /* Уменьшаем шрифт футера */
+        line-height: 1.5;
+    }
+
+    .contact-info {
+        flex-direction: column; /* Информация в столбик */
+        gap: 10px;
+    }
+}
