@@ -228,3 +228,119 @@ body {
   font-size: 25px;  /* Размер шрифта */
   margin-top: 25px;
 }
+
+
+
+
+
+
+
+
+
+.review-section {
+    color: white;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.review-section h2 {
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: flex-start;  /* Выравниваем элементы по верхней границе */
+    gap: 20px; /* Расстояние между элементами */
+    max-width: 1200px;  /* Ограничиваем максимальную ширину контейнера */
+    margin: 0 auto; /* Центрируем контейнер по горизонтали */
+}
+
+
+.review-image {
+    flex: 1; /* Занимает доступное пространство */
+    max-width: 50%;  /* Максимальная ширина контейнера картинки */
+}
+
+.review-image img {
+  max-width: 100%; /* Максимальная ширина для картинки */
+  height: auto;   /* Сохраняем пропорции */
+  display: block; /* Убирает отступы снизу */
+  margin-top: 15%;
+  margin-left: -10%;
+}
+
+.review-text {
+    flex: 1;  /* Занимает доступное пространство */
+    font-size: 28px;
+    line-height: 1.5;
+    max-width: 520px;
+    overflow-wrap: break-word; /* Перенос длинных слов */
+}
+
+.review-text h3 {
+    font-size: 50px; /* Заголовок для имени */
+    margin-bottom: 10px; /* Отступ снизу имени */
+}
+
+
+
+
+.contact-section {
+    color: white;
+    padding: 20px;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  .contact-section p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Перенос на новую строку если не помещается */
+      margin-bottom: 20px;
+  }
+  
+  .form-container input[type="text"],
+  .form-container input[type="email"],
+  .form-container input[type="tel"] ,
+  .form-container button {
+      padding: 10px 15px; /* Отступы */
+      border: none;
+      border-radius: 5px;
+      color: white;
+      background-color: #00005f;
+      cursor: pointer;
+      font-size: 1em;
+      margin: 5px;
+  }
+  .form-container button {
+     padding: 10px 20px;
+  
+  }
+  
+  footer {
+      color: white;
+      padding: 10px 20px;
+      font-family: sans-serif;
+      text-align: center;
+       border-top: 1px solid #4d4d72;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+      font-size: 0.9em;
+  }
