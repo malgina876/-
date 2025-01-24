@@ -9,11 +9,26 @@ body {
     background-color: #14083D; /* Темно-фиолетовый */
     padding: 10px 0;
     text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
   }
+
+  .accessibility-button {
+    color: aliceblue;
+    background-color: #00005f;
+}
+
+
+.log {
+  font-size: 50px;
+}
+header .logo {
+    max-height: 50px; /* Ограничиваем высоту логотипа */
+    margin-right: 20px; }
   
   header nav {
     display: flex;
     justify-content: space-around;
+    transition: color 0.3s ease;
   }
   
   header nav a {
@@ -22,7 +37,13 @@ body {
     padding: 10px 5px;
     font-weight: bold;
     font-size: 30px;
-  }
+      
+    }
+    
+    header nav a:hover {
+      color: #FFD700; /* Золотой цвет при наведении */
+    }
+  
 
 
   

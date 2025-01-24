@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GradGlam</title>
-    <link rel="stylesheet" href="styles.css"> </head>
+    <link rel="stylesheet" href="style4.css"> </head>
 <body>
     <header>
         <nav>
           <div class ="log">GradGlam</div>
-          <img src="./123.jpg" alt="Логотип GradGlam" class="logo">
+ 
           <a href="#">Контакты</a>
           <a href="">Главная</a>
           <a href="#">Каталог</a>
           <a href="index2.html">Корзина</a>
-          <button type="button" onclick="location.href='index4.html'" class="accessibility-button">Настройки доступности</button>
+        <button type="button" onclick="location.href='index.html'" class="accessibility-button">Настройки доступности</button>
         </nav>
       </header>
       
@@ -22,10 +22,11 @@
      
         <section class="hero-image">
             <img src="./обложка.jpg" alt="Фоновое изображение">  <!-- Фоновое изображение -->
-            <img src="./квадрат." alt="Наложение" class="overlay-image"> <!-- Наложение -->
-            <div class="hero-text">GradGlam</div>
+    
           </section>
-  
+    
+
+
     <main>
 
 
@@ -115,9 +116,9 @@
             <h2>Остались вопросы?</h2>
             <p>Оставляй заявку и мы скоро с тобой свяжемся!</p>
             <div class="form-container">
-                <input type="text" placeholder="Ваше Имя">
-                <input type="email" placeholder="Ваша Почта">
-                <input type="tel" placeholder="Ваш Телефон">
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+                <input type="tel" id="phone" name="phone" placeholder="Введите ваш телефон" required>
                 <button type="submit">Отправить</button>
             </div>
         </section>
