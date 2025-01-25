@@ -8,13 +8,13 @@ body {
 
 /* Header */
 header {
-   padding: 10px 20px;
+    padding: 10px 20px;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .logo {
@@ -25,7 +25,7 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
-     padding: 0;
+    padding: 0;
     margin: 0;
 }
 
@@ -39,49 +39,45 @@ nav {
     font-size: 1.1em;
 }
 
-
 /* Main */
 main {
     padding: 20px;
 }
+
 .product-container {
     display: flex;
     justify-content: center;
     gap: 20px;
     max-width: 1200px;
-     margin: 0 auto;
+    margin: 0 auto;
     align-items: flex-start;
-    flex-wrap: wrap; /* Перенос на новую строку, если не вмещается */
-
+    flex-wrap: wrap;
 }
 
 .product-images {
-    flex: 0 0 150px;  /* Фиксированная ширина */
+    flex: 0 0 150px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-
 }
+
 .product-main-image {
-   flex: 1;
-   max-width: 400px; /* Ограничение ширины */
-   max-height: 500px;
+    flex: 1;
+    max-width: 400px;
+    max-height: 600px;
 }
-
 
 .small-image {
     max-width: 100%;
     height: auto;
-   display: block; /* Убирает отступы снизу */
+    display: block;
 }
 
 .main-image {
-   max-width: 100%;
-   height: auto;
-    display: block; /* Убирает отступы снизу */
-
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
-
 
 .product-details {
     flex: 1;
@@ -94,7 +90,6 @@ main {
     margin-bottom: 10px;
 }
 
-
 .color-price {
     display: flex;
     align-items: center;
@@ -106,20 +101,16 @@ main {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #96c6e7; /* Цвет круга */
+    background-color: #96c6e7;
 }
 
 .price {
     font-size: 1.2em;
-
-
 }
-
 
 .product-details p {
     line-height: 1.6;
 }
-
 
 .product-details button {
     background-color: #00005f;
@@ -128,12 +119,9 @@ main {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-     font-size: 1em;
+    font-size: 1em;
     margin-top: 15px;
 }
-
-
-
 
 .contact-section {
     color: white;
@@ -141,149 +129,149 @@ main {
     font-family: sans-serif;
     text-align: center;
     margin-top: 5%;
-  }
-  
-  .contact-section h2 {
+}
+
+.contact-section h2 {
     font-size: 2em;
     margin-bottom: 10px;
-  }
-  .contact-section p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-  }
-  
-  .form-container {
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.form-container {
     display: flex;
     justify-content: center;
     gap: 10px;
-    flex-wrap: wrap; /* Перенос на новую строку если не помещается */
-      margin-bottom: 20px;
-  }
-  
-  .form-container input[type="text"],
-  .form-container input[type="email"],
-  .form-container input[type="tel"] ,
-  .form-container button {
-      padding: 10px 15px; /* Отступы */
-      border: none;
-      border-radius: 5px;
-      color: white;
-      background-color: #00005f;
-      cursor: pointer;
-      font-size: 1em;
-      margin: 5px;
-  }
-  .form-container button {
-     padding: 10px 20px;
-  
-  }
-  
-  footer {
-      color: white;
-      padding: 10px 20px;
-      font-family: sans-serif;
-      text-align: center;
-       border-top: 1px solid #4d4d72;
-  }
-  
-  .contact-info {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #00005f;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 5px;
+}
+
+.form-container button {
+    padding: 10px 20px;
+}
+
+footer {
+    color: white;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    text-align: center;
+    border-top: 1px solid #4d4d72;
+}
+
+.contact-info {
     display: flex;
     justify-content: space-around;
     align-items: center;
-      font-size: 0.9em;
-  }
+    font-size: 0.9em;
+}
 
-
-  /* Адаптивность для планшетов (768px - 1024px) */
+/* Адаптивность для планшетов (768px - 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
     nav {
-        flex-wrap: wrap; /* Перенос элементов меню */
+        flex-wrap: wrap;
         gap: 10px;
     }
 
     .nav-links {
-        justify-content: center; /* Центрируем ссылки */
+        justify-content: center;
         flex-wrap: wrap;
     }
 
     .product-container {
-        flex-wrap: wrap; /* Элементы переносятся */
-        gap: 30px; /* Увеличиваем расстояние */
+        flex-wrap: wrap;
+        gap: 30px;
     }
 
     .product-images {
-        flex: 1 0 120px; /* Изображения уменьшаются */
+        flex: 1 0 120px;
     }
 
     .product-main-image {
         flex: 1;
-        max-width: 300px; /* Уменьшаем главную картинку */
+        max-width: 300px;
     }
 
     .product-details {
-        max-width: 300px; /* Ограничиваем ширину деталей */
-        font-size: 0.9em; /* Уменьшаем шрифт */
+        max-width: 300px;
+        font-size: 0.9em;
     }
 
     .contact-section {
         padding: 15px;
-        font-size: 0.9em; /* Уменьшаем текст */
+        font-size: 0.9em;
     }
 
     .form-container input[type="text"],
     .form-container input[type="email"],
     .form-container input[type="tel"],
     .form-container button {
-        font-size: 0.9em; /* Уменьшаем шрифт полей */
+        font-size: 0.9em;
     }
 
     footer {
-        font-size: 0.8em; /* Уменьшаем шрифт футера */
+        font-size: 0.8em;
     }
 }
 
 /* Адаптивность для мобильных устройств (до 768px) */
 @media (max-width: 768px) {
     nav {
-        flex-direction: column; /* Меню в столбик */
+        flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
     .nav-links {
-        flex-direction: column; /* Ссылки в столбик */
+        flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
     .product-container {
-        flex-direction: column; /* Элементы в столбик */
+        flex-direction: column;
         align-items: center;
         gap: 20px;
     }
 
     .product-images {
-        flex: 0 0 auto; /* Автоматическая ширина */
-        justify-content: center; /* Центрируем маленькие изображения */
+        flex: 0 0 auto;
+        justify-content: center;
     }
 
     .product-main-image {
-        max-width: 90%; /* Главная картинка адаптируется к экрану */
+        max-width: 90%;
         height: auto;
     }
 
     .product-details {
-        max-width: 90%; /* Уменьшаем ширину текста */
+        max-width: 90%;
         text-align: center;
     }
 
     .contact-section {
-        font-size: 0.8em; /* Уменьшаем текст */
+        font-size: 0.8em;
         padding: 10px;
     }
 
     .form-container {
-        flex-direction: column; /* Поля формы в столбик */
+        flex-direction: column;
         gap: 10px;
     }
 
@@ -291,16 +279,16 @@ main {
     .form-container input[type="email"],
     .form-container input[type="tel"],
     .form-container button {
-        width: 100%; /* Поля занимают всю ширину */
+        width: 100%;
     }
 
     footer {
-        font-size: 0.7em; /* Уменьшаем шрифт футера */
+        font-size: 0.7em;
         line-height: 1.5;
     }
 
     .contact-info {
-        flex-direction: column; /* Информация в столбик */
+        flex-direction: column;
         gap: 10px;
     }
 }

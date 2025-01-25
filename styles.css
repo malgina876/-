@@ -1,505 +1,460 @@
 body {
-    margin: 0;
-    font-family: sans-serif;
-    background-color: #14083D; /* Темно-синий фон */
-    color: white;
-  }
-  
-  header {
-    background-color: #14083D; /* Темно-фиолетовый */
-    padding: 10px 0;
-    text-align: center;
-    animation: fadeIn 1.5s ease-in-out;
-  }
-
-  .accessibility-button {
-    color: aliceblue;
-    background-color: #00005f;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #14083D; /* Темно-синий фон */
+  color: white;
 }
 
+header {
+  background-color: #14083D; /* Темно-фиолетовый */
+  padding: 10px 0;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.accessibility-button {
+  color: aliceblue;
+  background-color: #00005f;
+}
 
 .log {
   font-size: 50px;
 }
+
 header .logo {
-    max-height: 50px; /* Ограничиваем высоту логотипа */
-    margin-right: 20px; }
-  
-  header nav {
-    display: flex;
-    justify-content: space-around;
-    transition: color 0.3s ease;
-  }
-  
-  header nav a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 5px;
-    font-weight: bold;
-    font-size: 30px;
-      
-    }
-    
-    header nav a:hover {
-      color: #FFD700; /* Золотой цвет при наведении */
-    }
-  
+  max-height: 50px; /* Ограничиваем высоту логотипа */
+  margin-right: 20px;
+}
 
+header nav {
+  display: flex;
+  justify-content: space-around;
+  transition: color 0.3s ease;
+}
 
-  
-  .hero-image {
-    position: relative; /* Важно! Делаем контейнер относительным */
-    width: 100%;
-    height: auto;
-  }
-  
-  .hero-image img {
-    width: 100%;
+header nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 5px;
+  font-weight: bold;
+  font-size: 30px;
+}
 
-    object-fit: cover;
-  }
-  
-  .overlay-image {
-    position: absolute; /* Абсолютное позиционирование */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.6; /* Регулируем прозрачность */
-    z-index: 1; /* Важно! Чтобы наложение было сверху */
-  }
-  
-  .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 300px;
-    font-family: serif;
-    color: white;
-    z-index: 2; /* Важно! Текст должен быть сверху наложения */
-  }
+header nav a:hover {
+  color: #FFD700; /* Золотой цвет при наведении */
+}
 
+.hero-image {
+  position: relative; /* Важно! Делаем контейнер относительным */
+  width: 100%;
+  height: auto;
+}
 
+.hero-image img {
+  width: 100%;
+  object-fit: cover;
+}
 
+.overlay-image {
+  position: absolute; /* Абсолютное позиционирование */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6; /* Регулируем прозрачность */
+  z-index: 1; /* Важно! Чтобы наложение было сверху */
+}
 
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 300px;
+  font-family: serif;
+  color: white;
+  z-index: 2; /* Важно! Текст должен быть сверху наложения */
+}
 
-  #about-us {
-    display: grid;
-    grid-template-columns: 1fr 300px; /* Одна колонка для текста, другая для картинки */
-    gap: 20px;
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-  }
-  
-  #about-us h2 {
-    font-size: 80px;
-    grid-column: 1 / 3; /* Заголовок занимает обе колонки */
-    margin-bottom: 10px;
-    margin-left: 7%;
-  }
-  
-  #about-us p {
-    max-width: 700px;
-    line-height: 1.5;
-    font-size: 35px;
-    margin-left: 7%;
-  }
-  
-  #about-us img {
-    max-height: 700px;
-    object-fit: cover;
-    margin-left: -80%;
-    margin-top: -30%;
-  }
+#about-us {
+  display: grid;
+  grid-template-columns: 1fr 300px; /* Одна колонка для текста, другая для картинки */
+  gap: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
 
+#about-us h2 {
+  font-size: 80px;
+  grid-column: 1 / 3; /* Заголовок занимает обе колонки */
+  margin-bottom: 10px;
+  margin-left: 7%;
+}
 
+#about-us p {
+  max-width: 700px;
+  line-height: 1.5;
+  font-size: 35px;
+  margin-left: 7%;
+}
 
+#about-us img {
+  max-height: 700px;
+  object-fit: cover;
+  margin-left: -80%;
+  margin-top: -30%;
+}
 
+#new-collection h2 {
+  text-align: center;
+  font-size: 80px;
+  margin-bottom: 20px;
+}
 
-  #new-collection h2 {
-    text-align: center;
-    font-size: 80px;
-    margin-bottom: 20px;
-  }
-  
-  .dress-line {
-    display: flex;
-    justify-content: center; /* Центрирование по горизонтали */
-    align-items: center;
-    gap: 60px;
-    width: 100%;
-    max-width: 1200px;
-    margin-left: 10%;  
-  }
-  
-  .dress-line img {
-    max-width: 500px;
-    max-height: 650px;
-    width: auto;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-  }
-  
-  .dress-line img:hover { /* Исправленный селектор */
-    transform: scale(1.1); /* Увеличение на 10% */
-  }
+.dress-line {
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: 10%;
+}
 
+.dress-line img {
+  max-width: 500px;
+  max-height: 650px;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
 
+.dress-line img:hover {
+  transform: scale(1.1); /* Увеличение на 10% */
+}
 
+.dress-container {
+  display: flex;
+  color: white;
+  padding: 20px;
+  font-family: sans-serif;
+}
 
+.dress-image {
+  flex: 1;
+  padding-right: 20px;
+  max-width: 50%; /* Задаем максимальную ширину контейнера изображения */
+}
 
-  .dress-container {
-    display: flex;
-    color: white;
-    padding: 20px;
-    font-family: sans-serif;
-  }
+.dress-image img {
+  max-width: 100%; /* Изображение не выходит за контейнер */
+  height: auto; /* Сохраняет пропорции */
+  max-height: 700px; /* Задаем максимальную высоту */
+  display: block;
+  object-fit: cover;
+  margin-top: 20%;
+  margin-left: 10%; /* Изображение масштабируется, чтобы заполнить контейнер, обрезая излишки */
+}
 
-  .dress-image {
-    flex: 1;
-    padding-right: 20px;
-      max-width: 50%; /* Задаем максимальную ширину контейнера изображения */
-  }
+.dress-text {
+  flex: 1;
+  font-size: 30px;
+  line-height: 1.5;
+  max-width: 700px; /* Максимальная ширина для текста */
+  overflow-wrap: break-word; /* Перенос длинных слов на новую строку */
+  margin-top: 15%;
+  margin-left: -5%;
+}
 
+.dress-text h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
 
-  .dress-image img {
-    max-width: 100%;       /* Изображение не выходит за контейнер */
-    height: auto;         /* Сохраняет пропорции */
-      max-height: 700px;   /* Задаем максимальную высоту */
-      display: block;
-
-    object-fit: cover; 
-    margin-top: 20%; 
-    margin-left: 10%; /* Изображение масштабируется, чтобы заполнить контейнер, обрезая излишки */
-  }
-
-  .dress-text {
-    flex: 1;
-    font-size: 30px;
-    line-height: 1.5;
-    max-width: 700px; /* Максимальная ширина для текста */
-    overflow-wrap: break-word; /* Перенос длинных слов на новую строку */
-    margin-top: 15%;
-    margin-left: -5%;
-
-  }
-
-  .dress-text h2 {
-      font-size: 1.5em;
-      margin-bottom: 10px;
-  }
-
-
-
-
-
-
-
-
-
-
-
-  .popular-models {
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-family: sans-serif;
+.popular-models {
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: sans-serif;
 }
 
 .popular-models h2 {
-    font-size: 80px;
-    margin-bottom: 20px;
+  font-size: 80px;
+  margin-bottom: 20px;
 }
 
 .models-container {
-    display: flex;
-    justify-content: center; /* Центрирование по горизонтали */
-    gap: 80px;
-    flex-wrap: wrap; /* Перенос на новую строку, если не вмещается */
-    max-width: 1200px; /* Ограничение максимальной ширины */
-    margin: 0 auto;  /* Центрирование контейнера по горизонтали */
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  gap: 80px;
+  flex-wrap: wrap; /* Перенос на новую строку, если не вмещается */
+  max-width: 1200px; /* Ограничение максимальной ширины */
+  margin: 0 auto; /* Центрирование контейнера по горизонтали */
 }
 
 .model-card {
-    flex: 1;
-    max-width: 300px;
-    text-align: center; /* Центрирование текста */
-    padding: 10px;
+  flex: 1;
+  max-width: 300px;
+  text-align: center; /* Центрирование текста */
+  padding: 10px;
 }
 
 .model-card img {
-    max-width: 102%;
-    height: auto;
-    display: block; /* Убирает отступы снизу */
-    transition: transform 0.3s ease;
-   
+  max-width: 102%;
+  height: auto;
+  display: block; /* Убирает отступы снизу */
+  transition: transform 0.3s ease;
 }
 
-.model-card img:hover { /* Исправленный селектор */
-    transform: scale(1.1); /* Увеличение на 10% */
-  }
-
+.model-card img:hover {
+  transform: scale(1.1); /* Увеличение на 10% */
+}
 
 .model-card p {
-  font-size: 25px;  /* Размер шрифта */
+  font-size: 25px; /* Размер шрифта */
   margin-top: 25px;
 }
 
-
-
-
-
-
-
-
-
 .review-section {
-    color: white;
-    padding: 20px;
-    font-family: sans-serif;
+  color: white;
+  padding: 20px;
+  font-family: sans-serif;
 }
 
 .review-section h2 {
-    text-align: center;
-    font-size: 80px;
-    margin-bottom: 20px;
+  text-align: center;
+  font-size: 80px;
+  margin-bottom: 20px;
 }
 
 .review-container {
-    display: flex;
-    justify-content: center; /* Центрируем по горизонтали */
-    align-items: flex-start;  /* Выравниваем элементы по верхней границе */
-    gap: 20px; /* Расстояние между элементами */
-    max-width: 1200px;  /* Ограничиваем максимальную ширину контейнера */
-    margin: 0 auto; /* Центрируем контейнер по горизонтали */
+  display: flex;
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: flex-start; /* Выравниваем элементы по верхней границе */
+  gap: 20px; /* Расстояние между элементами */
+  max-width: 1200px; /* Ограничиваем максимальную ширину контейнера */
+  margin: 0 auto; /* Центрируем контейнер по горизонтали */
 }
 
-
 .review-image {
-    flex: 1; /* Занимает доступное пространство */
-    max-width: 50%;  /* Максимальная ширина контейнера картинки */
+  flex: 1; /* Занимает доступное пространство */
+  max-width: 50%; /* Максимальная ширина контейнера картинки */
 }
 
 .review-image img {
   max-width: 100%; /* Максимальная ширина для картинки */
-  height: auto;   /* Сохраняем пропорции */
+  height: auto; /* Сохраняем пропорции */
   display: block; /* Убирает отступы снизу */
   margin-top: 15%;
   margin-left: -10%;
 }
 
 .review-text {
-    flex: 1;  /* Занимает доступное пространство */
-    font-size: 28px;
-    line-height: 1.5;
-    max-width: 520px;
-    overflow-wrap: break-word; /* Перенос длинных слов */
+  flex: 1; /* Занимает доступное пространство */
+  font-size: 28px;
+  line-height: 1.5;
+  max-width: 520px;
+  overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .review-text h3 {
-    font-size: 50px; /* Заголовок для имени */
-    margin-bottom: 10px; /* Отступ снизу имени */
+  font-size: 50px; /* Заголовок для имени */
+  margin-bottom: 10px; /* Отступ снизу имени */
 }
 
-
-
-
 .contact-section {
-    color: white;
-    padding: 20px;
-    font-family: sans-serif;
+  color: white;
+  padding: 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap; /* Перенос на новую строку если не помещается */
+  margin-bottom: 20px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container button {
+  padding: 10px 15px; /* Отступы */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #00005f;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 5px;
+}
+
+.form-container button {
+  padding: 10px 20px;
+}
+
+footer {
+  color: white;
+  padding: 10px 20px;
+  font-family: sans-serif;
+  text-align: center;
+  border-top: 1px solid #4d4d72;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header nav {
+    flex-wrap: wrap; /* Меню переносится на следующую строку при нехватке места */
+    gap: 10px;
+  }
+
+  header nav a {
+    font-size: 22px; /* Уменьшаем размер текста */
+    padding: 5px 10px;
+  }
+
+  .hero-text {
+    font-size: 150px; /* Сокращаем текст в заголовке */
+    padding: 0 20px;
+  }
+
+  #about-us {
+    grid-template-columns: 1fr; /* Одна колонка для планшетов */
     text-align: center;
   }
-  
-  .contact-section h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
+
+  #about-us img {
+    max-width: 80%; /* Уменьшаем изображение */
+    margin: 0 auto;
   }
-  .contact-section p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
+
+  .dress-line {
+    flex-wrap: wrap; /* Изображения переносятся на новую строку */
+    gap: 30px; /* Уменьшаем расстояние между элементами */
   }
-  
+
+  .dress-line img {
+    max-width: 45%; /* Два изображения в ряд */
+    height: auto;
+  }
+
+  .review-container {
+    flex-direction: column; /* Отзывы в одну колонку */
+    gap: 30px;
+  }
+
+  .review-image img {
+    max-width: 90%; /* Ограничиваем ширину изображения */
+    margin: 0 auto;
+  }
+
   .form-container {
-    display: flex;
+    flex-wrap: wrap; /* Поля формы переносятся на новую строку */
     justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap; /* Перенос на новую строку если не помещается */
-      margin-bottom: 20px;
   }
-  
-  .form-container input[type="text"],
-  .form-container input[type="email"],
-  .form-container input[type="tel"] ,
-  .form-container button {
-      padding: 10px 15px; /* Отступы */
-      border: none;
-      border-radius: 5px;
-      color: white;
-      background-color: #00005f;
-      cursor: pointer;
-      font-size: 1em;
-      margin: 5px;
-  }
-  .form-container button {
-     padding: 10px 20px;
-  
-  }
-  
+
   footer {
-      color: white;
-      padding: 10px 20px;
-      font-family: sans-serif;
-      text-align: center;
-       border-top: 1px solid #4d4d72;
+    font-size: 14px; /* Уменьшаем текст футера */
   }
-  
-  .contact-info {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-      font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Оптимальный базовый размер шрифта */
+    padding: 0 10px;
   }
 
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    header nav {
-      flex-wrap: wrap; /* Меню переносится на следующую строку при нехватке места */
-      gap: 10px;
-    }
-  
-    header nav a {
-      font-size: 22px; /* Уменьшаем размер текста */
-      padding: 5px 10px;
-    }
-  
-    .hero-text {
-      font-size: 150px; /* Сокращаем текст в заголовке */
-      padding: 0 20px;
-    }
-  
-    #about-us {
-      grid-template-columns: 1fr; /* Одна колонка для планшетов */
-      text-align: center;
-    }
-  
-    #about-us img {
-      max-width: 80%; /* Уменьшаем изображение */
-      margin: 0 auto;
-    }
-  
-    .dress-line {
-      flex-wrap: wrap; /* Изображения переносятся на новую строку */
-      gap: 30px; /* Уменьшаем расстояние между элементами */
-    }
-  
-    .dress-line img {
-      max-width: 45%; /* Два изображения в ряд */
-      height: auto;
-    }
-  
-    .review-container {
-      flex-direction: column; /* Отзывы в одну колонку */
-      gap: 30px;
-    }
-  
-    .review-image img {
-      max-width: 90%; /* Ограничиваем ширину изображения */
-      margin: 0 auto;
-    }
-  
-    .form-container {
-      flex-wrap: wrap; /* Поля формы переносятся на новую строку */
-      justify-content: center;
-    }
-  
-    footer {
-      font-size: 14px; /* Уменьшаем текст футера */
-    }
+  header nav {
+    flex-direction: column; /* Меню в столбик */
+    gap: 5px;
   }
 
-  
-  @media (max-width: 768px) {
-    body {
-      font-size: 16px; /* Оптимальный базовый размер шрифта */
-      padding: 0 10px;
-    }
-  
-    header nav {
-      flex-direction: column; /* Меню в столбик */
-      gap: 5px;
-    }
-  
-    header nav a {
-      font-size: 18px; /* Уменьшаем текст меню */
-      padding: 5px;
-    }
-  
-    .hero-text {
-      font-size: 80px; /* Уменьшаем текст в заголовке */
-      line-height: 1.2; /* Делаем текст более компактным */
-      padding: 10px;
-    }
-  
-    #about-us {
-      grid-template-columns: 1fr; /* Текст и картинка в одной колонке */
-      gap: 10px;
-    }
-  
-    #about-us img {
-      max-width: 100%; /* Изображение занимает всю ширину */
-      margin: 0 auto;
-    }
-  
-    .dress-line {
-      flex-direction: column; /* Изображения в столбик */
-      gap: 20px;
-    }
-  
-    .dress-line img {
-      max-width: 100%; /* Изображения занимают всю ширину */
-      height: auto;
-    }
-  
-    .dress-container {
-      flex-direction: column; /* Текст и изображение в столбик */
-      text-align: center;
-      gap: 20px;
-    }
-  
-    .dress-image img {
-      max-width: 100%; /* Ограничиваем ширину изображения */
-      margin: 0 auto;
-    }
-  
-    .review-container {
-      flex-direction: column; /* Отзывы в одну колонку */
-      gap: 20px;
-    }
-  
-    .review-image img {
-      max-width: 100%; /* Уменьшаем изображение */
-      margin: 0 auto;
-    }
-  
-    .form-container {
-      flex-direction: column; /* Поля формы в столбик */
-      gap: 10px;
-    }
-  
-    .form-container input,
-    .form-container button {
-      width: 100%; /* Поля формы занимают всю ширину */
-    }
-  
-    footer {
-      font-size: 12px; /* Уменьшаем текст футера */
-      line-height: 1.5;
-    }
+  header nav a {
+    font-size: 18px; /* Уменьшаем текст меню */
+    padding: 5px;
   }
-  
+
+  .hero-text {
+    font-size: 80px; /* Уменьшаем текст в заголовке */
+    line-height: 1.2; /* Делаем текст более компактным */
+    padding: 10px;
+  }
+
+  #about-us {
+    grid-template-columns: 1fr; /* Текст и картинка в одной колонке */
+    gap: 10px;
+  }
+
+  #about-us img {
+    max-width: 100%; /* Изображение занимает всю ширину */
+    margin: 0 auto;
+  }
+
+  .dress-line {
+    flex-direction: column; /* Изображения в столбик */
+    gap: 20px;
+  }
+
+  .dress-line img {
+    max-width: 100%; /* Изображения занимают всю ширину */
+    height: auto;
+  }
+
+  .dress-container {
+    flex-direction: column; /* Текст и изображение в столбик */
+    text-align: center;
+    gap: 20px;
+  }
+
+  .dress-image img {
+    max-width: 100%; /* Ограничиваем ширину изображения */
+    margin: 0 auto;
+  }
+
+  .review-container {
+    flex-direction: column; /* Отзывы в одну колонку */
+    gap: 20px;
+  }
+
+  .review-image img {
+    max-width: 100%; /* Уменьшаем изображение */
+    margin: 0 auto;
+  }
+
+  .form-container {
+    flex-direction: column; /* Поля формы в столбик */
+    gap: 10px;
+  }
+
+  .form-container input,
+  .form-container button {
+    width: 100%; /* Поля формы занимают всю ширину */
+  }
+
+  footer {
+    font-size: 12px; /* Уменьшаем текст футера */
+    line-height: 1.5;
+  }
+}
